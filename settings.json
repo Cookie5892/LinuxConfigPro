@@ -1,0 +1,42 @@
+{
+    // 设置编辑器的字体大小为20
+    "editor.fontSize": 20,
+    // 当打开 Makefile 时自动进行配置
+    "makefile.configureOnOpen": true,
+    // 百度comate的私有服务地址，空字符串表示未配置
+    "baidu.comate.privateService": "",
+    // 百度comate用户名
+    "baidu.comate.username": "A15518371551",
+    // 百度comate许可证
+    "baidu.comate.license": "678dac3d-f41f-4c30-887e-e494a8a35d03",
+    // 在差异编辑器中显示 CodeLens 信息
+    "diffEditor.codeLens": true,
+    // 是否启用百度comate安全增强（false表示禁用）
+    "baidu.comate.enableSecurityEnhancement": false,
+    // 百度comate行优先模式，auto 表示自动选择
+    "baidu.comate.linePreferMode": "auto",
+    // 百度comate beta 版本相关设置
+    "baidu.comate.beta": {
+        // 是否启用全栈智能建议（false禁用）
+        "enableFullStackIntelligence": false,
+        // 是否启用安全智能建议（false禁用）
+        "enableSecurityIntelligence": false,
+        // 是否启用自动补全智能建议（false禁用）
+        "enableCompletionIntelligence": false,
+        // 是否启用调试智能建议（false禁用）
+        "enableDebugIntelligence": false
+    },
+    // 设置百度comate docstring输出位置为侧边栏
+    "baidu.comate.docstringOutputPosition": "sidebar",
+    // 启用 vim.vimrc 配置支持
+    "vim.vimrc.enable": true,
+        
+    // 启用加载 Vim 的配置文件 (.vimrc)
+    "vim.vimrc.enable": true,
+    // 指定 .vimrc 文件的路径（若你的 .vimrc 位于家目录下）
+    "vim.vimrc.path": "~/.vimrc",
+    // ...其他已有配置...
+    
+    // 定义设置同步时需要忽略的设置列表（空列表代表不忽略任何设置）
+    "settingsSync.ignoredSettings": []
+}
