@@ -38,5 +38,7 @@
     // ...其他已有配置...
     
     // 定义设置同步时需要忽略的设置列表（空列表代表不忽略任何设置）
-    "settingsSync.ignoredSettings": []
+    "settingsSync.ignoredSettings": [],
+    // 禁用编辑器小地图
+    "editor.minimap.enabled": false
 }
