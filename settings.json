@@ -40,5 +40,9 @@
     // 定义设置同步时需要忽略的设置列表（空列表代表不忽略任何设置）
     "settingsSync.ignoredSettings": [],
     // 禁用编辑器小地图
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    
+    // 禁用预览模式，确保每次打开文件都会创建新的选项卡
+    "workbench.editor.enablePreview": false
+    
 }
