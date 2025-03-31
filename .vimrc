@@ -35,11 +35,12 @@ set encoding=utf-8 " 使用 UTF-8 编码
 set fileencodings=utf-8,gbk " 设置文件编码识别顺序
 set wildmenu       " 启用命令行补全增强
 set wildmode=longest:full,full " 命令行补全模式
-set clipboard=unnamedplus " 使用系统剪贴板
+set clipboard=unnamedplus " 使用系统剪贴板,但由于 Vim 本身不支持剪切板功能，这一设置将不会生效
 set mouse=a        " 启用鼠标支持
 set splitright     " 垂直分割窗口时新窗口在右侧
 set splitbelow     " 水平分割窗口时新窗口在下方
 set guifont=Monaco:h28 " 设置字体为 Monaco，大小为 16
+highlight Normal guibg=#000000
 
 " vim-plug 插件管理器配置
 call plug#begin('~/.vim/plugged')
