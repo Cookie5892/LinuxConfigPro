@@ -1,48 +1,114 @@
 {
-    // 设置编辑器的字体大小为20
-    "editor.fontSize": 20,
-    // 当打开 Makefile 时自动进行配置
-    "makefile.configureOnOpen": true,
-    // 百度comate的私有服务地址，空字符串表示未配置
-    "baidu.comate.privateService": "",
-    // 百度comate用户名
-    "baidu.comate.username": "A15518371551",
-    // 百度comate许可证
-    "baidu.comate.license": "678dac3d-f41f-4c30-887e-e494a8a35d03",
-    // 在差异编辑器中显示 CodeLens 信息
-    "diffEditor.codeLens": true,
-    // 是否启用百度comate安全增强（false表示禁用）
-    "baidu.comate.enableSecurityEnhancement": false,
-    // 百度comate行优先模式，auto 表示自动选择
-    "baidu.comate.linePreferMode": "auto",
-    // 百度comate beta 版本相关设置
-    "baidu.comate.beta": {
-        // 是否启用全栈智能建议（false禁用）
-        "enableFullStackIntelligence": false,
-        // 是否启用安全智能建议（false禁用）
-        "enableSecurityIntelligence": false,
-        // 是否启用自动补全智能建议（false禁用）
-        "enableCompletionIntelligence": false,
-        // 是否启用调试智能建议（false禁用）
-        "enableDebugIntelligence": false
+    // ========================
+    // Vim 设置
+    // ========================
+    "vim.vimrc.enable": true,                   // 开启 vim 模式时载入 vimrc 配置
+    "vim.vimrc.path": "/home/robot/.vimrc",        // 指定 vim 配置文件的路径
+
+    // ========================
+    // 窗口设置
+    // ========================
+    "window.menuBarVisibility": "hidden",        // 隐藏窗口顶部的菜单栏
+    "window.doubleClickIconToClose": true,         // 允许双击窗口图标关闭窗口
+
+    // ========================
+    // 外部终端设置
+    // ========================
+    "terminal.external.linuxExec": "gnome-terminal", // 指定外部终端的启动程序
+
+    // ========================
+    // 内置终端设置
+    // ========================
+    "terminal.integrated.autoReplies": {},         // 集成终端自动回复配置
+    "terminal.integrated.shell.linux": "/bin/bash",   // 指定集成终端使用的 shell 程序
+    "terminal.integrated.fontFamily": "'Ubuntu Mono', monospace", // 设置终端字体为 Ubuntu Mono 或 monospace
+    "terminal.integrated.fontSize": 17,              // 设置集成终端的字体大小为 17
+    "terminal.integrated.lineHeight": 1.2,           // 设置终端行间距为 1.2
+    "terminal.integrated.cursorStyle": "block",      // 指定终端光标样式为块状
+    "terminal.integrated.cursorBlinking": true,      // 开启终端光标闪烁效果
+    "terminal.integrated.scrollback": 10000,         // 设置终端滚动缓冲区行数为 10000
+
+    // ========================
+    // Workbench 设置
+    // ========================
+    "workbench.editor.enablePreview": false,       // 关闭预览模式，不以预览方式打开文件
+    "workbench.editor.editorActionsLocation": "titleBar", // 编辑器动作按钮放在标题栏
+    "workbench.colorCustomizations": {             // 自定义工作台（包括终端）的配色
+        "terminal.background": "#300a24",          // 终端背景颜色
+        "terminal.foreground": "#d4d4d4",          // 终端前景（文字）颜色
+        "terminal.ansiBlack": "#000000",           // 终端 ANSI 黑色
+        "terminal.ansiRed": "#cd3131",             // 终端 ANSI 红色
+        "terminal.ansiGreen": "#0dbc79",           // 终端 ANSI 绿色
+        "terminal.ansiYellow": "#e5e510",          // 终端 ANSI 黄色
+        "terminal.ansiBlue": "#0505ef",            // 终端 ANSI 蓝色
+        "terminal.ansiMagenta": "#bc3fbc",         // 终端 ANSI 品红色
+        "terminal.ansiCyan": "#1404f4",            // 终端 ANSI 青色
+        "terminal.ansiWhite": "#e5e5e5",           // 终端 ANSI 白色
+        "terminal.ansiBrightBlack": "#666666",     // 终端 ANSI 亮黑色
+        "terminal.ansiBrightRed": "#f14c4c",       // 终端 ANSI 亮红色
+        "terminal.ansiBrightGreen": "#23d18b",     // 终端 ANSI 亮绿色
+        "terminal.ansiBrightYellow": "#f5f543",    // 终端 ANSI 亮黄色
+        "terminal.ansiBrightBlue": "#000fe1",      // 终端 ANSI 亮蓝色
+        "terminal.ansiBrightMagenta": "#d670d6",   // 终端 ANSI 亮品红色
+        "terminal.ansiBrightCyan": "#1a00db",      // 终端 ANSI 亮青色
+        "terminal.ansiBrightWhite": "#e5e5e5"      // 终端 ANSI 亮白色
     },
-    // 设置百度comate docstring输出位置为侧边栏
-    "baidu.comate.docstringOutputPosition": "sidebar",
-    // 启用 vim.vimrc 配置支持
-    "vim.vimrc.enable": true,
-        
-    // 启用加载 Vim 的配置文件 (.vimrc)
-    "vim.vimrc.enable": true,
-    // 指定 .vimrc 文件的路径（若你的 .vimrc 位于家目录下）
-    "vim.vimrc.path": "~/.vimrc",
-    // ...其他已有配置...
-    
-    // 定义设置同步时需要忽略的设置列表（空列表代表不忽略任何设置）
-    "settingsSync.ignoredSettings": [],
-    // 禁用编辑器小地图
-    "editor.minimap.enabled": false,
-    
-    // 禁用预览模式，确保每次打开文件都会创建新的选项卡
-    "workbench.editor.enablePreview": false
-    
+
+    // ========================
+    // 编辑器设置
+    // ========================
+    "editor.fontSize": 20,                           // 设置编辑器显示的字体大小为 20
+    "editor.minimap.enabled": false,                 // 关闭编辑器右侧的代码概览小地图
+    "editor.unicodeHighlight.invisibleCharacters": false, // 关闭不可见字符的高亮显示
+    "editor.quickSuggestions": {                     // 启用注释和字符串内的快速建议
+        "comments": "on",                            // 注释内启用快速建议
+        "strings": "on"                              // 字符串内启用快速建议
+    },
+    "editor.suggest.matchOnWordStartOnly": true,     // 仅匹配单词起始位置的建议
+
+    // ========================
+    // Git 设置
+    // ========================
+    "git.openRepositoryInParentFolders": "never",    // 禁止在父文件夹中自动打开仓库
+    "git.confirmSync": false,                        // 取消 Git 同步时的确认提示
+    "git.autofetch": true,                           // 自动获取最新 Git 更新
+
+    // ========================
+    // Grunt 设置
+    // ========================
+    "grunt.autoDetect": "on",                        // 开启 grunt 任务自动检测
+
+    // ========================
+    // Settings Sync 设置
+    // ========================
+    "settingsSync.ignoredSettings": [],              // 同步时不忽略任何设置
+
+    // ========================
+    // GitHub Copilot 设置
+    // ========================
+    "github.copilot.editor.enableAutoCompletions": false, // 关闭 Copilot 自动补全
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "makefile": false
+    },
+
+    // ========================
+    // Lingma 相关设置
+    // ========================
+    "Lingma.localMachineModel": false,                // 本地机器模型关闭
+    "Lingma.cloudModelAutoTriggerGenerateLength": "disable", // 禁用云模型自动生成倾向
+    "Lingma.cloudModelManualTriggerGenerateLength": "short",
+    "baidu.comate.privateService": "",
+    "baidu.comate.username": "A15518371551",
+    "baidu.comate.license": "678dac3d-f41f-4c30-887e-e494a8a35d03",
+    "baidu.comate.enableSecurityEnhancement": false,
+    "baidu.comate.completionLength": "auto",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.elf": "default"
+    },
+    "makefile.configureOnOpen": true // 手动触发时采用短生成策略
 }
